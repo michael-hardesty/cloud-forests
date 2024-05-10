@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+
+}
+
+.intro {
+  margin: 5rem;
+  margin-top: 1rem;
+}
+
+.parallax-container {
+  position: relative;
+  height: 400vh; /* Adjust the height based on the number of overlay text sections */
+}
+
+.parallax-bg {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  margin-top: -1px; /* Adjust the margin to remove the whitespace */
+}
+
+.overlay-text {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.overlay-text p {
+  background-color: #333;
+  padding: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+.overlay-text.visible {
+  opacity: 1;
+}
+
+.additional-content {
+  padding-top: 50px;
+  margin: 5rem;
+}
